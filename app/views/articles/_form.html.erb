@@ -1,0 +1,142 @@
+<%= form_for(article) do |f| %>
+  <% if article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :article_type %>
+    <%= f.text_field :article_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manufacturer %>
+    <%= f.text_field :manufacturer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :units %>
+    <%= f.text_field :units %>
+  </div>
+
+  <div class="field">
+    <%= f.label :period_save %>
+    <%= f.text_field :period_save %>
+  </div>
+
+  <div class="field">
+    <%= f.label :technical_features %>
+    <%= f.text_field :technical_features %>
+  </div>
+
+  <div class="field">
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_per_unit %>
+    <%= f.text_field :price_per_unit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_per_unit %>
+    <%= f.text_field :price_per_unit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :volume_netto %>
+    <%= f.text_field :volume_netto %>
+  </div>
+
+  <div class="field">
+    <%= f.label :volume_brutto %>
+    <%= f.text_field :volume_brutto %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight_netto %>
+    <%= f.text_field :weight_netto %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight_brutto %>
+    <%= f.text_field :weight_brutto %>
+  </div>
+
+  <div class="field">
+    <%= f.label :height %>
+    <%= f.text_field :height %>
+  </div>
+
+  <div class="field">
+    <%= f.label :width %>
+    <%= f.text_field :width %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fragile %>
+    <%= f.check_box :fragile %>
+  </div>
+
+  <div class="field">
+    <%= f.label :radioactive %>
+    <%= f.check_box :radioactive %>
+  </div>
+
+  <div class="field">
+    <%= f.label :toxic %>
+    <%= f.check_box :toxic %>
+  </div>
+
+  <div class="field">
+    <%= f.label :packing_type %>
+    <%= f.text_field :packing_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :transport %>
+    <%= f.text_field :transport %>
+  </div>
+
+  <div class="field">
+    <%= f.label :analogues %>
+    <%= f.text_field :analogues %>
+  </div>
+
+  <div class="field">
+    <%= f.label :special_features %>
+    <%= f.text_field :special_features %>
+  </div>
+
+  <div class="field">
+    <%= f.label :special_conditions %>
+    <%= f.text_field :special_conditions %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

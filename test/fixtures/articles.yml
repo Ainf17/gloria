@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  article_type: 
+  name: MyString
+  manufacturer: 
+  units: 
+  period_save: 
+  technical_features: 
+  country: 
+  description: MyString
+  price_per_unit: 
+  price_per_unit: 
+  volume_netto: 1.5
+  volume_brutto: 1.5
+  weight_netto: 1.5
+  weight_brutto: 1.5
+  height: 1.5
+  width: 1.5
+  color: 
+  fragile: false
+  radioactive: false
+  toxic: false
+  packing_type: 
+  transport: 
+  analogues: 
+  special_features: 
+  special_conditions: 
+
+two:
+  article_type: 
+  name: MyString
+  manufacturer: 
+  units: 
+  period_save: 
+  technical_features: 
+  country: 
+  description: MyString
+  price_per_unit: 
+  price_per_unit: 
+  volume_netto: 1.5
+  volume_brutto: 1.5
+  weight_netto: 1.5
+  weight_brutto: 1.5
+  height: 1.5
+  width: 1.5
+  color: 
+  fragile: false
+  radioactive: false
+  toxic: false
+  packing_type: 
+  transport: 
+  analogues: 
+  special_features: 
+  special_conditions: 

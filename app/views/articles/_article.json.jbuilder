@@ -1,0 +1,2 @@
+json.extract! article, :id, :article_type, :name, :manufacturer, :units, :period_save, :technical_features, :country, :description, :price_per_unit, :price_per_unit, :volume_netto, :volume_brutto, :weight_netto, :weight_brutto, :height, :width, :color, :fragile, :radioactive, :toxic, :packing_type, :transport, :analogues, :special_features, :special_conditions, :created_at, :updated_at
+json.url article_url(article, format: :json)

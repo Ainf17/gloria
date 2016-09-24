@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Articles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Article type</th>
+      <th>Name</th>
+      <th>Manufacturer</th>
+      <th>Units</th>
+      <th>Period save</th>
+      <th>Technical features</th>
+      <th>Country</th>
+      <th>Description</th>
+      <th>Price per unit</th>
+      <th>Price per unit</th>
+      <th>Volume netto</th>
+      <th>Volume brutto</th>
+      <th>Weight netto</th>
+      <th>Weight brutto</th>
+      <th>Height</th>
+      <th>Width</th>
+      <th>Color</th>
+      <th>Fragile</th>
+      <th>Radioactive</th>
+      <th>Toxic</th>
+      <th>Packing type</th>
+      <th>Transport</th>
+      <th>Analogues</th>
+      <th>Special features</th>
+      <th>Special conditions</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.article_type %></td>
+        <td><%= article.name %></td>
+        <td><%= article.manufacturer %></td>
+        <td><%= article.units %></td>
+        <td><%= article.period_save %></td>
+        <td><%= article.technical_features %></td>
+        <td><%= article.country %></td>
+        <td><%= article.description %></td>
+        <td><%= article.price_per_unit %></td>
+        <td><%= article.price_per_unit %></td>
+        <td><%= article.volume_netto %></td>
+        <td><%= article.volume_brutto %></td>
+        <td><%= article.weight_netto %></td>
+        <td><%= article.weight_brutto %></td>
+        <td><%= article.height %></td>
+        <td><%= article.width %></td>
+        <td><%= article.color %></td>
+        <td><%= article.fragile %></td>
+        <td><%= article.radioactive %></td>
+        <td><%= article.toxic %></td>
+        <td><%= article.packing_type %></td>
+        <td><%= article.transport %></td>
+        <td><%= article.analogues %></td>
+        <td><%= article.special_features %></td>
+        <td><%= article.special_conditions %></td>
+        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Article', new_article_path %>
